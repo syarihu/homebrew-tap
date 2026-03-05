@@ -5,8 +5,7 @@ Homebrew formulae that allows installation of tools through the [Homebrew](https
 ## Installation
 
 ```
-brew tap syarihu/tap
-brew install <FORMULA>
+brew install syarihu/tap/<FORMULA>
 ```
 
 ## Formulae
