@@ -1,8 +1,8 @@
 class Calday < Formula
   desc "CLI tool to fetch today's calendar events as JSON"
   homepage "https://github.com/syarihu/calday"
-  url "https://github.com/syarihu/calday/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "7c3c597271e2ede35ad91142fbdfc735ebafc399e13c90a094d21873786063f4"
+  url "https://github.com/syarihu/calday/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "47c788ed2c5a77a7b243cb27d26fdb5b4ca8a2be5dcf4a634c15ff3255cddba3"
   license "MIT"
 
   depends_on xcode: ["15.0", :build]
