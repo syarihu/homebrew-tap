@@ -21,8 +21,8 @@ class AgentProctor < Formula
 
   def caveats
     <<~EOS
-      To open Agent Proctor from Launchpad, Spotlight, or Raycast:
-        ln -s "#{opt_prefix}/Agent Proctor.app" /Applications/
+      To start Agent Proctor:
+        proctor sidebar
 
       Agent Proctor requires permission to control iTerm2 via Apple Events.
       If prompted after upgrading, grant permission in System Settings.
