@@ -1,26 +1,26 @@
 class Lk < Formula
   desc "Local knowledge base CLI for Claude Code"
   homepage "https://github.com/syarihu/local-knowledge-cli"
-  version "0.16.0"
+  version "0.17.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/syarihu/local-knowledge-cli/releases/download/v#{version}/lk-aarch64-apple-darwin.tar.gz"
-      sha256 "5c314ce9bbef0064b5eda02dbc903e13e619c9a8b41c803ff53465c6c67864f7"
+      sha256 "2a20cf4f0c6c1cde04c294f334356bbb4fcb9ed08ce0b6b0237d54301dd82083"
     else
       url "https://github.com/syarihu/local-knowledge-cli/releases/download/v#{version}/lk-x86_64-apple-darwin.tar.gz"
-      sha256 "1dbe48ffc3611a6c8a4bec074addee2886e3c434b726e6ce478358097eb4f312"
+      sha256 "c4080430d6075a6ee83fc000689fe9efd088a6335da1fb82c19fa62da2bd8a34"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/syarihu/local-knowledge-cli/releases/download/v#{version}/lk-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "309185366b708438c50a9f3b4283a761628657c23e04b53148fc2eb5175f33b2"
+      sha256 "6272855e731bdf88f44a48aaf032a93477d56b3cd7f93c2be8882a6fc64a5541"
     else
       url "https://github.com/syarihu/local-knowledge-cli/releases/download/v#{version}/lk-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "9bb87b5ee962bef1ad8a4d692a2db8b5acbe0c7138d8f3c557e44988a9a8f1a2"
+      sha256 "15efeff7d6eba410dbbf439fead7f1a80164ffe57cf7802e5fe585996b5e5f2b"
     end
   end
 
