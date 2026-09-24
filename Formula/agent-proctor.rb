@@ -1,8 +1,8 @@
 class AgentProctor < Formula
   desc "Watch coding agents in worktrees and see which ones are waiting on you"
   homepage "https://github.com/syarihu/agent-proctor"
-  url "https://github.com/syarihu/agent-proctor/archive/refs/tags/v0.5.0.tar.gz"
-  sha256 "811028633710f976e1e290b3a2a153863701d49ad591cd95302e25949e22c021"
+  url "https://github.com/syarihu/agent-proctor/archive/refs/tags/v0.6.0.tar.gz"
+  sha256 "0aaddde536cfd6daf0eae30865689957d5cd2efbc17c0a40828deae7067990fd"
   license "MIT"
 
   depends_on xcode: ["15.0", :build]
