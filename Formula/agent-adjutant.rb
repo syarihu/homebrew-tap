@@ -5,21 +5,21 @@ class AgentAdjutant < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/syarihu/agent-adjutant/releases/download/v0.3.0/agent-adjutant-aarch64-apple-darwin.tar.gz"
-      sha256 "d51e16533831f242108da7d0c7847be44d127ad7a42823ee46b83029da2a38f1"
+      url "https://github.com/syarihu/agent-adjutant/releases/download/v0.4.0/agent-adjutant-aarch64-apple-darwin.tar.gz"
+      sha256 "990fd3f0260d90194f085f47a141897f2691612344248339cacd1c63d813d3fb"
     else
-      url "https://github.com/syarihu/agent-adjutant/releases/download/v0.3.0/agent-adjutant-x86_64-apple-darwin.tar.gz"
-      sha256 "f968c06b73b66162fe87484cc5437d7e116b0f0b8a9808cd872a9fcf61eb18e1"
+      url "https://github.com/syarihu/agent-adjutant/releases/download/v0.4.0/agent-adjutant-x86_64-apple-darwin.tar.gz"
+      sha256 "3d4719841e99ff1f04b27ed212f0436d025747d38c5abbf8bbd6294d989ad458"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/syarihu/agent-adjutant/releases/download/v0.3.0/agent-adjutant-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "2e1abd27517676da1e0696cb33f222e030aa27cbafa3eefa2e4e8724b7e17666"
+      url "https://github.com/syarihu/agent-adjutant/releases/download/v0.4.0/agent-adjutant-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "091cf454b4a5241871f54bbb855ff2d59819ab927634f253bbabf194fb5b1d9d"
     else
-      url "https://github.com/syarihu/agent-adjutant/releases/download/v0.3.0/agent-adjutant-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "647672521355a0f73d089c8ed9b4e60ebc93eeac4ee3567951d4bcf9b5df9dad"
+      url "https://github.com/syarihu/agent-adjutant/releases/download/v0.4.0/agent-adjutant-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "b480172745a40e24641fc2410a4a1527f814489ff3c8556570fd1b187830a3a8"
     end
   end
 
@@ -29,7 +29,7 @@ class AgentAdjutant < Formula
   end
 
   test do
-    assert_match "adjutant 0.3.0", shell_output("#{bin}/adjutant --version")
-    assert_match "adjutant 0.3.0", shell_output("#{bin}/adj --version")
+    assert_match "adjutant 0.4.0", shell_output("#{bin}/adjutant --version")
+    assert_match "adjutant 0.4.0", shell_output("#{bin}/adj --version")
   end
 end
